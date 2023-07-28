@@ -1,18 +1,26 @@
 .wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color:  #E4E5EA;
   top: 46px;
+  width: 1140px;
+  height: 73px;
 }
 
 .left {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: right;
   gap: 10px;
   font-family: Montserrat, serif;
   font-size: 10px;
   font-weight: 300;
 
   span{
-    width: 165px;
+    width: 140px;
     font-size: 10px;
     font-weight: 300;
     line-height: 12px;
@@ -20,18 +28,30 @@
   }
 }
 
-.center {
+.center ul{
+  display: flex;
   font-family: Inter, serif;
   font-size: 16px;
   font-weight: 500;
+  width: 503px;
+  align-items: center;
+  justify-content: space-between;
+
+  li{
+    cursor: pointer;
+  }
 }
 
-.left {
+.right {
+  display: flex;
+  align-items: center;
   font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 500;
 }
 
 .contacts {
+  position: relative;
   display: flex;
+  gap: 20px;
 }
