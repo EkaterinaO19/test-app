@@ -1,0 +1,37 @@
+.wrapper {
+  color:  #E4E5EA;
+  top: 46px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Montserrat, serif;
+  font-size: 10px;
+  font-weight: 300;
+
+  span{
+    width: 165px;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12px;
+    text-align: left;
+  }
+}
+
+.center {
+  font-family: Inter, serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.left {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contacts {
+  display: flex;
+}
