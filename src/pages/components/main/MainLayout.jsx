@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './MainLayout.module.scss'
+
 function MainLayout(props) {
     return (
         <main className={styles.wrapper}>
@@ -35,6 +36,8 @@ function MainLayout(props) {
                     </div>
                 </div>
                 <button className={styles.button}>Получить консультацию</button>
+
+
             </div>
 
         </main>

@@ -11,7 +11,6 @@ import styles from './Header.module.scss'
 function Header(props) {
     return (
         <header className={styles.wrapper}>
-            {/*<Image src={purple_light} alt={'purple_light'} height={100} width={100} />*/}
             <div className={styles.left}>
                 <Image src={logoIcon} alt={"logoIcon"}/>
                 <span>крупный интегратор CRM в Росcии и ещё 8 странах</span>
@@ -28,7 +27,7 @@ function Header(props) {
             </div>
 
             <div className={styles.right}>
-                <span>+7 555 555-55-55</span>
+                <span className={styles.tel}>+7 555 555-55-55</span>
                 <div className={styles.contacts}>
                     <Image src={telegramIcon} alt={'telegramIcon'}/>
                     <Image src={viberIcon} alt={'viberIcon'}/>

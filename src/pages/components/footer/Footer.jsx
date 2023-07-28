@@ -57,7 +57,7 @@ function Footer(props) {
                     </ul>
                     <div className={styles.text_mini}>
                         <span>©WELBEX 2022. Все права защищены.</span>
-                        <span>Политика конфиденциальности</span>
+                        <span><u>Политика конфиденциальности</u></span>
                     </div>
                 </div>
 
