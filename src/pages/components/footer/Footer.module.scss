@@ -3,12 +3,15 @@
 
 .wrapper {
   font-family: Inter, sans-serif;
-  padding-top: 55px;
+  padding-top: 25px;
   padding-bottom: 10px;
   display: flex;
   height: 315px;
   justify-content: space-between;
   margin-top: 130px;
+  color: #E4E5EA;
+  font-size: 14px;
+
 
   @include screen-320 {
     flex-direction: column;
@@ -25,6 +28,11 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    @include screen-320{
+      margin-top: 20px;
+      font-size: 12px;
+    }
   }
 
   li {
@@ -33,6 +41,10 @@
     font-weight: 400;
     line-height: 19px;
     margin-bottom: 10px;
+
+    @include screen-320{
+      font-size: 12px;
+    }
   }
 
   span {
@@ -54,12 +66,17 @@
 .columns {
   display: flex;
   gap: 52px;
+
+  @include screen-320{
+    gap: 20px;
+  }
 }
 
 .right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  font-size: 14px;
 
   @include screen-320 {
     align-items: flex-start

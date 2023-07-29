@@ -41,22 +41,25 @@ function MainLayout(props) {
                         </div>
                     </div>
                     <button className={styles.button}>Получить консультацию</button>
-
-
                 </div>
             )}
 
             {is320Width && (
-                <div className={styles.grid_container}>
-                    <div className={styles.column}>
-                        <p>Skype аудит</p>
-                        <p>30 виджетов</p>
+                <>
+                    <div className={styles.right_title_mini}>Вместе с
+                        <span className={styles.right_title_mini_span}> бесплатной консультацией </span>
+                        мы дарим:</div>
+                    <div className={styles.grid_container}>
+                        <div className={styles.column}>
+                            <p>Skype аудит</p>
+                            <p>30 виджетов</p>
+                        </div>
+                        <div className={styles.column}>
+                            <p>Dashboard</p>
+                            <p>Месяц аmoCRM</p>
+                        </div>
                     </div>
-                    <div className={styles.column}>
-                        <p>Dashboard</p>
-                        <p>Месяц аmoCRM</p>
-                    </div>
-                </div>
+                </>
             )}
         </main>
     );
