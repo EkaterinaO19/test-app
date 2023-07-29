@@ -1,5 +1,5 @@
 @import "normalize";
-
+@import "vars";
 
 *,
 *:after,
@@ -53,12 +53,3 @@ select:-webkit-autofill:focus {
 }
 
 
-
-//.purple_light{
-//  position: absolute;
-//  //background: #833AB4;
-//  //width: 259px;
-//  //height: 259px;
-//  //left: 602px;
-//  //opacity: 0.5px;
-//}

@@ -4,8 +4,6 @@ import logoIcon from "@/assets/images/logo_welbex.svg";
 import telegramIcon from '@/assets/images/telegram.svg';
 import viberIcon from '@/assets/images/viber.svg';
 import whatsappIcon from '@/assets/images/whatsapp.svg'
-import purple_light from '@/assets/images/purple_light.png'
-
 import styles from './Header.module.scss'
 
 function Header(props) {
@@ -22,7 +20,7 @@ function Header(props) {
                     <li>Виджеты</li>
                     <li>Интеграции</li>
                     <li>Кейсы</li>
-                    <li>Сертификаты</li>
+                    <li className={styles.certs}>Сертификаты</li>
                 </ul>
             </div>
 

@@ -1,4 +1,13 @@
+@import "src/styles/vars.scss";
+
+
 .wrapper{
-  margin-right: 150px;
-  margin-left: 150px;
+  @include screen-1440{
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+  @include screen-320{
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }

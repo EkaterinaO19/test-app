@@ -1,0 +1,14 @@
+
+// Mixin for 1440px width
+@mixin screen-1440 {
+  @media only screen and (max-width: 1440px) {
+    @content;
+  }
+}
+
+// Mixin for 320px width (mobile)
+@mixin screen-320 {
+  @media only screen and (max-width: 320px) {
+    @content;
+  }
+}

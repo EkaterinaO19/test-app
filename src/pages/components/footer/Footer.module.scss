@@ -1,4 +1,7 @@
-.wrapper{
+@import "src/styles/vars.scss";
+
+
+.wrapper {
   font-family: Inter, sans-serif;
   padding-top: 55px;
   padding-bottom: 10px;
@@ -6,6 +9,13 @@
   height: 315px;
   justify-content: space-between;
   margin-top: 130px;
+
+  @include screen-320 {
+    flex-direction: column;
+    margin-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   p {
     color: #656566;
@@ -35,24 +45,34 @@
   }
 }
 
-.left{}
+.left {
+}
 
-.center{}
+.center {
+}
 
 .columns {
   display: flex;
   gap: 52px;
 }
 
-.right{
+.right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
+  @include screen-320 {
+    align-items: flex-start
+  }
 
   ul, li {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    @include screen-320 {
+      align-items: flex-start;
+    }
   }
 }
 
@@ -61,10 +81,16 @@
   gap: 10px;
 }
 
-.text_mini{
+.text_mini {
   display: flex;
   flex-direction: column;
   margin-top: auto;
+
+  @include screen-320{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    align-items: flex-start;
+  }
 }
 
 

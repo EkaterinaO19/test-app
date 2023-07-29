@@ -1,12 +1,29 @@
+@import "src/styles/vars.scss";
+
 .wrapper {
-  position: relative;
+  //position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  color:  #E4E5EA;
-  top: 46px;
-  width: 1140px;
-  height: 73px;
+  color: #E4E5EA;
+  width: 100vw;
+
+  @include screen-1440 {
+    width: 1140px;
+    height: 73px;
+    margin-top: 46px;
+    justify-content: space-between;
+
+  }
+  @include screen-320 {
+    width: 320px;
+    height: 55px;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    .certs {
+      display: none;
+    }
+  }
 }
 
 .left {
@@ -19,7 +36,11 @@
   font-size: 10px;
   font-weight: 300;
 
-  span{
+  @include screen-320 {
+    display: none;
+  }
+
+  span {
     width: 140px;
     font-size: 10px;
     font-weight: 300;
@@ -28,17 +49,26 @@
   }
 }
 
-.center ul{
+.center ul {
   display: flex;
   font-family: Inter, serif;
   font-size: 16px;
   font-weight: 500;
-  width: 503px;
   align-items: center;
+  width: 503px;
   justify-content: space-between;
 
-  li{
+  li {
     cursor: pointer;
+    display: flex;
+    margin-right: 8px;
+  }
+
+  @include screen-320 {
+    display: flex;
+    text-transform: uppercase;
+    width: fit-content;
+    font-size: 14px;
   }
 }
 
@@ -48,6 +78,10 @@
   font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 500;
+
+  @include screen-320 {
+    display: none;
+  }
 }
 
 .contacts {
@@ -56,6 +90,6 @@
   gap: 20px;
 }
 
-.tel{
+.tel {
   margin-right: 47px;
 }

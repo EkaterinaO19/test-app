@@ -1,15 +1,36 @@
+@import "src/styles/vars.scss";
+
+
 .wrapper {
   display: flex;
   justify-content: space-between;
-  height: auto;
+  height: 445px;
   color: white;
+
+  @include screen-320 {
+    flex-direction: column;
+    justify-content: unset;
+    width: auto;
+    height: 451px;
+    background-image: url('../../../../public/bg.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .left {
   display: flex;
   flex-direction: column;
-  margin-top: 209px;
+  //margin-top: 209px;
   font-family: Inter, serif;
+
+  @include screen-320 {
+    margin-top: 55px;
+  }
 
   h1 {
     font-size: 48px;
@@ -26,6 +47,23 @@
     font-size: 48px;
     font-weight: 400;
     line-height: 58px;
+
+    @include screen-320 {
+      font-size: 36px;
+      font-weight: 900;
+      line-height: 44px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    @include screen-320 {
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 44px;
+      text-align: left;
+      width: 272px;
+    }
+
   }
 
   p {
@@ -36,7 +74,17 @@
     line-height: 22px;
     text-align: left;
     margin-top: 30px;
+
+    @include screen-320 {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
+      height: 44px;
+      margin-top: 15px;
+    }
   }
+
 }
 
 .right {
@@ -60,7 +108,6 @@
       font-weight: 500;
       line-height: 22px;
       text-align: right;
-
       background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -131,4 +178,46 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+
+  @include screen-320 {
+    display: none;
+  }
 }
+
+//320 px
+.grid_container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.column {
+  flex: 1;
+  color: #E4E5EA;
+
+  p {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    cursor: pointer;
+    &::before {
+      content: "-";
+      margin-right: 5px;
+      background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+}
+
+
+
+//@include screen-320 {
+//  align-self: flex-start;
+//  //width: 120px;
+//  height: 16px;
+//  //left: 16px;
+//
+
+//}
