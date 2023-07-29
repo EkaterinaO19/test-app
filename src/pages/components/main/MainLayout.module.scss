@@ -25,11 +25,13 @@
 .left {
   display: flex;
   flex-direction: column;
-  //margin-top: 209px;
+  padding-top: 90px;
   font-family: Inter, serif;
 
   @include screen-320 {
     margin-top: 40px;
+    padding-top: 0px;
+
   }
 
   h1 {
@@ -71,7 +73,6 @@
       text-align: left;
       width: 272px;
     }
-
   }
 
   p {
@@ -96,7 +97,7 @@
 }
 
 .right {
-  margin-top: 224px;
+  margin-top: 105px;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
@@ -187,6 +188,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  padding: 20px;
 
   @include screen-320 {
     display: none;

@@ -10,14 +10,14 @@
   @include screen-1440 {
     width: 1140px;
     height: 73px;
-    margin-top: 46px;
+    padding-top: 46px;
     justify-content: space-between;
 
   }
   @include screen-320 {
     width: 320px;
     height: 55px;
-    margin-top: 0;
+    padding-top: 0;
     padding-left: 15px;
     padding-right: 15px;
     .certs {
